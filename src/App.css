@@ -1,38 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
+  background-color: rgb(238, 238, 238);
+  height: 100vh;
+}
+
+.nav {
+  padding-top: 80px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.books-container {
+  width: 50%;
+  padding-top: 80px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.books-container ul {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.books-container .book:hover {
+  text-decoration: line-through;
 }
 
-.App-link {
-  color: #61dafb;
+.books-container .book {
+  cursor: pointer;
+  padding-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.books-container .book .author {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.books-container .book .title {
+  font-size: 28px;
+}
+
+.form-container {
+  padding-top: 80px;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+
+.form-container input[type="text"] {
+  width: 60%;
+  border: 0;
+  margin-top: 10px;
+  padding: 10px;
+}
+.form-container input[type="submit"] {
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px;
 }
